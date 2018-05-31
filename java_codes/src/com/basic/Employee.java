@@ -1,77 +1,72 @@
-package com.basic.datatypeexample;
+package com.basic;
 
 public class Employee {
 	
 	private String firstName;
-		private String lastName; // instance variable that stores the last name
-		private double monthlySalary; // instance variable
-		
-		// constructor initializes firstName, lastName and monthlySalary with String and double supplied as argument
+		private String lastName; 
+		private double monthlySalary; 
+		public Employee()
+		{
+			
+		}
 		public Employee (String fname, String lname, double msalary)
 		{
-			firstName = fname; // initialize firstName
-			lastName = lname; // initialize lastName
-			monthlySalary = msalary; // initialize monthlySalary
-			
-			// if the monthly salary is not positive, set it to 0.0.
-			if (msalary < 0.0)
-				monthlySalary = 0.0;
-		} // end constructor
-		
-		// method to set the first name
+			firstName = fname; 
+			lastName = lname; 
+			monthlySalary = msalary; 
+		} 
 		public void setFirstName (String fname)
 		{
-			firstName = fname;	// store the first name
+			firstName = fname;	
 			
-		} // end method setFirstName
-		
-		// method to retrieve first name
+		} 
 		public String getFirstName ()
 		{
 			return firstName;
-		} // end method getFirstName
-		
-		// method to set the last name
+		} 
 		public void setLastName (String lname)
 		{
-			lastName = lname;	// store the last name
-		} // end method setLastName
-		
-		// method to retrieve last name
+			lastName = lname;	
+		} 
 		public String getLastName ()
 		{
 			return lastName;
-		} // end method getLastName
-		
-		// method to set the monthly salary
+		}
 		public void setMonthlySalary (double msalary)
 		{
-			monthlySalary = msalary;	// store the monthly salary
-			
-
-		} // end method setMonthlySalary
-		
-		// method to retrieve monthly salary
+			if (msalary < 0.0)
+				monthlySalary = 0.0;
+			monthlySalary = msalary;
+			} 
 		public double getMonthlySalary ()
 		{
 			return monthlySalary;
-		} // end method getMonthlySalary
-		
-		// method to retrieve yearly salary
-		public double getYearlySalary()
+		} 
+			public double getYearlySalary()
 		{
 			double yearlySalary = monthlySalary * 12;
 			return yearlySalary;
-		} // end method getYearlySalary
-		
-		// method to retrieve yearly salary after giving 10% raise
+		} 
 		public double getRaiseSalary()
 		{
 			double raise =  monthlySalary * 0.1 ;
 			double raiseSalary = ( monthlySalary + raise ) * 12;
 			return raiseSalary;
-		} // end method getRaiseSalary
+		} 
+		public static void main(String args[]) {
+			Employee e1 = new Employee();
+			e1.setFirstName("Ani");
+			e1.setLastName("s");
+			e1.setMonthlySalary(5000);
+			e1.getYearlySalary();
+			e1.getYearlySalary();
+			System.out.println(e1.getYearlySalary());
+			System.out.println(e1.getYearlySalary());
+			
+		}
+		}
+
 		
-	} // end class Employee
+
 
 
