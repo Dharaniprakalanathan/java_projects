@@ -59,9 +59,9 @@ public class Employee {
 			e1.setLastName("s");
 			e1.setMonthlySalary(5000);
 			e1.getYearlySalary();
-			e1.getYearlySalary();
+			
 			System.out.println(e1.getYearlySalary());
-			System.out.println(e1.getYearlySalary());
+			
 			
 		}
 		}
