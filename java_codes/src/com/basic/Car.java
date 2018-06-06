@@ -37,6 +37,8 @@ public class Car {
 		Car car2=new Car();
 		car1.speed=20.0;
 		car2.speed=10.0;
+		System.out.println(car1.speed);
+		System.out.println(car2.speed);
 		car1.accelerate();
 		car2.accelerate();
 		System.out.println(car1.speed);
