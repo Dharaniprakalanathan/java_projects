@@ -47,6 +47,11 @@ public class Carr {
 	{
 		speed+=10;
 	}
+	
+	public void brake()
+	{
+		System.out.println("brake in car called");
+	}
 	public static void main(String[] args) {
 		//Carr car1=new Carr();
 		//Carr car2=new Carr(20);
