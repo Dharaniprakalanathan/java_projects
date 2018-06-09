@@ -3,6 +3,7 @@ package com.basic;
 public class Carr {
 	private String model;
 	private double speed;
+	int i = 10;
 	public Carr()
 	{
 		System.out.println("empty cons called");
