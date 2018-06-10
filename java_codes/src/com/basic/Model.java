@@ -8,6 +8,10 @@ public class Model {
 		
 		System.out.println(Travelone instanceof Bus);
 		
+		Travel Travelthree = new Rabbit();
+		Owner owner = (Rabbit)Travelthree;
+		
+		System.out.println(owner instanceof Rabbit);
 		
 	}
 

@@ -1,6 +1,6 @@
 package com.basic;
 
-public abstract class Animal implements Travel {
+public abstract class Animal implements Travel,Owner {
 
 	}
 
@@ -11,7 +11,13 @@ class Lion extends Vehicle
 @Override
 public int getSpeed() {
 	return 0;
+	
 
+}
+
+@Override
+public String getOwnerName() {
+	return null;
 }
 }
 
@@ -23,6 +29,11 @@ public int getSpeed() {
 	return 0;
 
 }
+
+@Override
+public String getOwnerName() {
+	return null;
+}
 }
 
 class Rabbit extends Vehicle
@@ -32,5 +43,10 @@ class Rabbit extends Vehicle
 public int getSpeed() {
 	return 0;
 
+}
+
+@Override
+public String getOwnerName() {
+	return null;
 }
 }
